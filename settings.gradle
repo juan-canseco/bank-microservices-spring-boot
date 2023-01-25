@@ -1,2 +1,6 @@
 rootProject.name = 'bank-microservices'
+include 'common'
+
+include 'services:accounts-service'
+findProject(':services:accounts-service')?.name = 'accounts-service'
 
